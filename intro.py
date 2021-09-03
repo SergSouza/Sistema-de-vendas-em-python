@@ -2,6 +2,8 @@ from tkinter import font, ttk
 from tkinter import *
 from PIL import ImageTk, Image
 
+
+
 class splash:
     def __init__(self):
         self.splashMainW = Tk()
@@ -53,4 +55,4 @@ class splash:
 
         self.splashMainW.mainloop()
 
-
+      

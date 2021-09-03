@@ -51,7 +51,7 @@ class Login :
         self.pa.bind('<Button-1>',self.onclick1)
 
         #criando nosso botão de entrar
-        self.signin = Button(self.longiFrame,width=10,text="Login",anchor="center",bg="#30B8B2",fg="dimgray",font="roboto 14",foreground="white")
+        self.signin = Button(self.longiFrame,width=10,text="Login",anchor="center",bg="#30B8B2",fg="dimgray",font="roboto 14",foreground="white",command=self.sucesso)
         self.signin.place(x=35,y=290)
 
 
@@ -61,3 +61,10 @@ class Login :
 
     def onclick1(self,event):
         self.pa.delete(0,"end")
+
+    #add nossa menssagem  (sucesso ou errro ) no nosso longin 
+    def erro(self):
+        messagebox.showerror("Error","Verifique os campus")
+    def sucesso(self):
+        messagebox.showinfo("sucesso","Bem vindos")
+        self.loginW.quit()
