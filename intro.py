@@ -26,9 +26,11 @@ class splash:
         path = 'imagens/user.png'
         img = ImageTk.PhotoImage(Image.open(path))
 
+        
         # splashMainW == formulario
         # main == label
         # fotoFlame == imagens
+        
 
 
         #trabalhando nosso label
@@ -49,8 +51,7 @@ class splash:
         Label(main,text="EMAIL: sergio.escureto@gmail.com",font="arial 16 bold",bg="#8C8177").place(x="445",y="360")
         Label(main,text="TELEFONE: (99) 984717748",font="arial 16 bold",bg="#8C8177").place(x="445",y="410")
 
-        self.Continuar = Button(self.splashMainW,width=20,text="Continuar",anchor="center",bg="green",fg="dimgray",font="roboto 14",foreground="white")
-        self.Continuar.place(x=600,y=580)
+    
         #aqui entra as mensg de boa vindas 
 
         self.splashMainW.mainloop()
